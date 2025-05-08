@@ -1,14 +1,16 @@
 import Logo from "./Components/Logo";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Module from "./Components/Module";
+import Modules from "./Components/Modules";
+
+import City from "./assets/svgs/City-skyline-cuate.svg"
 
 import { SiFacebook, SiInstagram, SiX } from "react-icons/si";
 
 const App = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <nav className="py-4 px-10 flex items-center gradient drop-shadow-xl border-b-2 border-white sticky top-0">
+      <nav className="py-4 px-10 flex items-center gradient drop-shadow-xl border-b-2 border-white sticky top-0 z-50">
         <div className="w-56">
           <Logo color="white" />
         </div>
@@ -26,29 +28,27 @@ const App = () => {
         </div>
       </nav>
 
-      <main className="min-h-[34rem] mb-8">
+      <main className="min-h-[34rem]">
+        <img src={City} alt="city-bg" className="fixed z-0 top-0 opacity-65"/>
         <div className="px-20 py-16 text-white gradient2">
-          <h1 className="text-5xl noto-serif">A Complete Platform for Managing Modern Bus Transportation Systems</h1>
-          <h2 className="text-2xl noto-serif mt-10">Manage routes, bookings, staff, and live tracking — all from one easy-to-use dashboard.</h2>
+          <h1 className="text-5xl noto-serif relative">A Complete Platform for Managing Modern Bus Transportation Systems</h1>
+          <h2 className="text-2xl noto-serif mt-10 relative">Manage routes, bookings, staff, and live tracking — all from one easy-to-use dashboard.</h2>
 
-          <div className="flex justify-center gap-8 text-black mt-20">
+          <div className="flex justify-center gap-8 text-black mt-20 relative">
             <Link to="/features" className="text-xl bg-white py-4 px-6 rounded-full font-medium text-[#00446b]">See Features</Link>
             <Link to="/demo" className="text-xl text-white py-4 px-6 rounded-full font-medium gradient outline">Request a Demo</Link>
           </div>
         </div>
 
 
-        <div className="my-12 flex flex-col items-center px-40">
+        <div className="py-12 flex flex-col items-center px-64 bg-white relative">
           <h3 className="italic text-center text-lg">Designed for bus transit companies — our system simplifies operations, improves efficiency, and reduces costs.</h3>
-
-          <h1 className="font-bold text-3xl mt-10 text-center">Modules</h1>
-          <div className="flex mt-6 flex-wrap gap-28 gap-y-12 justify-center">
-            {modules.map((module, index) => <Module key={index} name={module.name} desc={module.desc} />)}
-          </div>
+          <h1 className="font-semibold text-4xl mt-20 mb-10 text-center">Core Modules</h1>
+          <Modules />
         </div>
       </main>
 
-      <footer className="h-48 text-center p-4 border-t gradient flex flex-col text-white">
+      <footer className="text-center p-4 border-t gradient flex flex-col text-white pt-8 relative">
         <div className="grid grid-cols-2">
           <div className="w-72">
             <Logo color="white"/>
@@ -56,7 +56,7 @@ const App = () => {
           <div>
             <ul className="text-white text-right">
               <li><a href="mailto:nexfleetdynamics@gmail.com">nexfleetdynamics@gmail.com</a></li>
-              <li><a href="sms:+639123456789?body=Please%20contact%20me.">0912 345 6789</a></li>
+              <li><a href="sms:+639123456789?body=Please%20contact%20me.">+63 9123456789</a></li>
               <li>Quezon City - Main Ofiice</li>
             </ul>
           </div>
@@ -79,29 +79,6 @@ const App = () => {
 };
 
 export default App;
-
-const modules = [
-  {
-    name: "Human Resources",
-    desc: "Manage drivers and staff profiles, attendance, payroll, and roles"
-  },
-  {
-    name: "Administration",
-    desc: "System users, access controls, and configuration"
-  },
-  {
-    name: "Finance",
-    desc: "Fares, revenue reports, invoicing, budgeting, and financial dashboards"
-  },
-  {
-    name: "Logistics",
-    desc: "Inventory and Warehousing, Facility Management, and reverse logistics"
-  },
-  {
-    name: "Core Operations",
-    desc: "Trip scheduling, live bus tracking, ticketing, maintenance, and route planning"
-  },
-];
 
 const navLinks = [
   {

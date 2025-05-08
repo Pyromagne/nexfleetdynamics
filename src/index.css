@@ -54,3 +54,10 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.city-bg {
+  background-image: url("./assets/svgs/City-skyline-cuate.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
