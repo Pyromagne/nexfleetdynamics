@@ -29,14 +29,12 @@ const Card = ({ module }) => {
           flipped ? "rotate-y-180" : ""
         }`}
       >
-        {/* Front Side */}
         <div className="absolute w-full h-full backface-hidden flex flex-col items-center">
           <img src={module.illustration} alt={module.name} className="w-48" />
           <p className="text-2xl font-semibold text-center">{module.name}</p>
           <p className="text-center">{module.desc}</p>
         </div>
 
-        {/* Back Side */}
         <div className="absolute w-full h-full rotate-y-180 backface-hidden flex flex-col gap-4">
           {module.links.map((link, index) => (
             <a

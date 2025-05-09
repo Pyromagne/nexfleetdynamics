@@ -68,8 +68,8 @@ const Layout = () => {
             <p className="mt-auto">
               © 2025 NexFleet Dynamics - All Rights Reserved.
             </p>
-            <Link className="hover:underline">Privacy Policy</Link>
-            <Link className="hover:underline">Term of Use</Link>
+            <Link className="hover:underline" to="/privacy">Privacy Policy</Link>
+            <Link className="hover:underline" to="/terms">Term of Use</Link>
           </div>
           <div className="ml-auto flex gap-4">
             <SiFacebook size={28} className="hover:cursor-pointer" />
