@@ -6,31 +6,51 @@ import LogisticsI from "../assets/svgs/Logistics-amico.svg";
 
 import Bus from "../assets/svgs/city-bus-rafiki.svg";
 
-const modules = [
+export const modules = [
   {
     name: "Human Resources",
     desc: "Manage drivers and staff profiles, attendance, payroll, and roles",
     illustration: HumanResourceI,
+    links: [
+      "https://hr1.nexfleetdynamics.com",
+      "https://hr2.nexfleetdynamics.com",
+      "https://hr3.nexfleetdynamics.com",
+      "https://hr4.nexfleetdynamics.com",
+    ]
   },
   {
     name: "Administration",
     desc: "System users, access controls, and configuration",
     illustration: AdminI,
+    links: [
+      "https://admin.nexfleetdynamics.com",
+    ]
   },
   {
     name: "Finance",
     desc: "Fares, revenue reports, invoicing, budgeting, and financial dashboards",
     illustration: Finance,
+    links: [
+      "https://finance.nexfleetdynamics.com",
+    ]
   },
   {
     name: "Logistics",
     desc: "Inventory and Warehousing, Facility Management, and reverse logistics",
     illustration: LogisticsI,
+    links: [
+      "https://lgstc1.nexfleetdynamics.com",
+      "https://lgstc2.nexfleetdynamics.com",
+    ]
   },
   {
     name: "Core Operations",
     desc: "Trip scheduling, live bus tracking, ticketing, maintenance, and route planning",
     illustration: CoreI,
+    links: [
+      "https://core1.nexfleetdynamics.com",
+      "https://core2.nexfleetdynamics.com",
+    ]
   },
 ];
 

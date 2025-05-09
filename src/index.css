@@ -33,7 +33,7 @@ html{
   background: linear-gradient(
     145deg,
     rgba(1, 97, 157, 1) 0%,
-    rgba(0, 85, 140, 1) 50%,
+    rgb(0, 85, 140) 50%,
     rgba(0, 59, 109, 1) 100%
   );
 }

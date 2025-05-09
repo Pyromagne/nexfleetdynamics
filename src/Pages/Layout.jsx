@@ -28,7 +28,7 @@ const Layout = () => {
           ))}
           <Link
             to="/signin"
-            className="py-2 px-4 rounded-full bg-white text-[#00446b] font-medium ml-2"
+            className="py-2 px-4 rounded-full bg-white text-[#00446b] font-medium ml-2 hover:scale-105 duration-200"
           >
             Sign in
           </Link>
@@ -41,7 +41,7 @@ const Layout = () => {
 
       <footer className="text-center p-4 border-t gradient flex flex-col text-white pt-6 relative overflow-hidden">
         <div className="w-full h-full absolute marquee-container -bottom-6 left-0">
-          <img src={Bus} alt="Bus" className="w-64 z-0 marquee-item" />
+          <img src={Bus} alt="Bus" className="w-64 z-0 marquee-item opacity-40" />
         </div>
         <div className="grid grid-cols-2 z-10 pb-4">
           <div className="w-72">
@@ -63,7 +63,7 @@ const Layout = () => {
             </ul>
           </div>
         </div>
-        <div className="border-t border-white/50 py-4 mt-auto flex z-10">
+        <div className="py-4 mt-auto flex z-10">
           <div className="flex gap-4 items-end">
             <p className="mt-auto">
               © 2025 NexFleet Dynamics - All Rights Reserved.
