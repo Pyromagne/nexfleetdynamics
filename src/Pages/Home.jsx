@@ -32,13 +32,13 @@ const Home = () => {
       </div>
 
       <div className="py-12 flex flex-col items-center px-64 bg-white relative">
-        <h3 className="italic text-center text-lg">
+        <h1 className="font-semibold text-6xl my-4 text-center">
+          Core Modules
+        </h1>
+        <h3 className="italic text-center text-lg mb-8">
           Designed for bus transit companies — our system simplifies operations,
           improves efficiency, and reduces costs.
         </h3>
-        <h1 className="font-semibold text-4xl mt-20 mb-10 text-center">
-          Core Modules
-        </h1>
         <Modules />
       </div>
     </>
